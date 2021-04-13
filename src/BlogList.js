@@ -1,7 +1,7 @@
 const BlogList = (props) => {
    
    const blogs = props.blogprop;
-   const handleDelete = props.handleDeleteprop;
+   // const handleDelete = props.handleDeleteprop;
    return ( 
       <div className="blog-list">
          {blogs.map( (blog) => (
@@ -12,7 +12,7 @@ const BlogList = (props) => {
                   {
                      color: "#a5a8ac",
                   }}>by {blog.author}</strong></i></p>
-               <button onClick={() => handleDelete(blog.id)}>Delete</button>
+               {/* <button onClick={() => handleDelete(blog.id)}>Delete</button> */}
             </div>
          ) )}
       </div>
