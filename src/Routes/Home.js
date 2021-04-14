@@ -1,7 +1,7 @@
 //import { useState, useEffect } from 'react';
-import BlogList from './BlogList';
-import loadinglogo from './Ripple-1s-200px.gif'
-import useFetch from './useFetch'
+import BlogList from '../Components/BlogList';
+import loadinglogo from '../Assets/Ripple-1s-200px.gif'
+import useFetch from '../Hooks/useFetch'
 
 const Home = () => {
 

@@ -1,5 +1,5 @@
-import Navbar from './Navbar'
-import Home from './Home'
+import Navbar from './Components/Navbar'
+import Home from './Routes/Home'
 
 function App() {
   return (
