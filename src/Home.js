@@ -1,41 +1,16 @@
-import { useState, useEffect } from 'react';
+//import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
 import loadinglogo from './Ripple-1s-200px.gif'
+import useFetch from './useFetch'
 
 const Home = () => {
 
-   const [blogs, setBlogs] = useState(null);
-   const [isPending, setIsPending] = useState(true);
-   const [error, setError] = useState(null);
+   const {data: blogs, isPending, error} = useFetch("http://localhost:8000/blogs");
 
    // const handleDelete = (id) => {
    //    const newBlogs = blogs.filter(blog => blog.id !== id)
    //    setBlogs(newBlogs);
    // }
-
-   useEffect(() => {
-      // console.log("Use Effect ran!");
-      setTimeout(() => {
-         fetch('http://localhost:8000/blogs')
-      .then(res => {
-         if(!res.ok) {
-            throw Error('Could not fetch from the source API !?');
-         }
-         return res.json();
-      })
-      .then((data) => {
-         //console.log(data);
-         setBlogs(data);
-         setIsPending(false);
-         setError(null);
-      })
-      .catch(err => {
-         setIsPending(false);
-         setError(err.message);
-      })
-      }, 1000);
-   }, [])
-
 
    return ( 
       <div className="home">
