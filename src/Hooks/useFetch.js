@@ -8,8 +8,10 @@ const useFetch = (url) => {
 
   useEffect(() => {
     // console.log("Use Effect ran!");
+    const abortCont = new AbortController();
+
     setTimeout(() => {
-      fetch(url)
+      fetch(url, { signal: abortCont.signal })
         .then((res) => {
           if (!res.ok) {
             throw Error("Could not fetch from the source API !?");
@@ -23,11 +25,18 @@ const useFetch = (url) => {
           setError(null);
         })
         .catch((err) => {
-          setIsPending(false);
-          setError(err.message);
+          if(err.name === "AbortError") {
+            console.log("Fetch Aborted");
+          }else {
+            setIsPending(false);
+            setError(err.message);
+          }
+          
         });
     }, 1000);
-  }, []);
+
+    return () => abortCont.abort();
+  }, [url]);
 
   return {data, isPending, error};
 };
