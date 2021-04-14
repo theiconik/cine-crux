@@ -9,7 +9,7 @@ const BlogList = (props) => {
         <div className="blog-preview" key={blog.id}>
           <Link to={`/blogs/${blog.id}`} style={{textDecoration: "none"}}>
             <h2>{blog.title}</h2>
-            <p>{blog.body}</p>
+            <p style={{textOverflow:"ellipsis", overflow:"hidden", display:"-webkit-box", WebkitLineClamp: "2", WebkitBoxOrient:"vertical"}}>{blog.body}</p>
           </Link>
           <p>
             <i>
