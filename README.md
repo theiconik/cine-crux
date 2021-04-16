@@ -1,6 +1,11 @@
 # Cine Crux
 Simple movie-shows review blog created using React. Includes functionalities like posting, deleting and reading blog. Talking about the looks, here's how it looks 👇 
 
+![Screen Recording (16-04-2021 20-39-47)](https://user-images.githubusercontent.com/52995399/115045661-b6956000-9ea4-11eb-9614-676ffc08c975.gif)
+
+Given below is all the necessary info that gets attached while creating react app using create-react-app. In short, if you want to see my project on your machine, 
+jsut clone the repository, open the folder in your preferred code editor and type "npm start" in terminal. After that in order to fetch the one blog that's shown in the gif, start a new terminal and type "npx json-server --watch db.json --port 8000".
+
 
 # Getting Started with Create React App
 
