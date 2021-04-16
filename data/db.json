@@ -1,15 +1,28 @@
 {
-   "blogs": [
-         { "title": "My new Website", 
-         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-         "author": "Mario Gonsalves",
-         "id": 1
-         },
-   
-         { "title": "Welcome party", 
-         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
-         "author": "Yoshi Takota",
-         "id": 2
-         }
-   ]
+  "blogs": [
+    {
+      "title": "My new Website",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "author": "Mario Gonsalves",
+      "id": 1
+    },
+    {
+      "title": "Welcome party",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+      "author": "Yoshi Takota",
+      "id": 2
+    },
+    {
+      "title": "dfnofd",
+      "body": "ndffvoifn",
+      "author": "Piyush",
+      "id": 3
+    },
+    {
+      "title": "KR$NA is best rapper in India",
+      "body": "Starting is rap career from 1998, KR$NA the OG has grinded a lot in the field of rap and have gained a lot of experience in the game. He has made a lot of tracks on different genres like trap, protest, poetry, beef, drill etc. He is most known for his fearless attitude in diss tracks and insane level of lyricism in his rap.",
+      "author": "Ujjawal",
+      "id": 4
+    }
+  ]
 }

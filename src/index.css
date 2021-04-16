@@ -91,8 +91,30 @@
   background: #f1356d;
   color: #fff;
   border: 0;
-  padding: 8px;
+  padding: 8px 10px;
   border-radius: 8px;
   cursor: pointer;
   outline: none;
+  transition: 0.5s;
+} 
+
+.create button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 1s;
+}
+.ripple:hover {
+  background: #f1356d radial-gradient(circle, transparent 1%, #f1356d 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #ff487f;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+
