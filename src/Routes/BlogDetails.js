@@ -1,6 +1,7 @@
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import useFetch from "../Hooks/useFetch";
 import loadinglogo from "../Assets/Ripple-1s-200px.gif";
+import trash from "../Assets/icons8-trash-24.png";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -8,6 +9,15 @@ const BlogDetails = () => {
   const { data: blog, error, isPending } = useFetch(
     "http://localhost:8000/blogs/" + id
   );
+  const history = useHistory();
+
+  const handleDelete = () => {
+    fetch("http://localhost:8000/blogs/" + blog.id,{
+      method: "DELETE"
+    }).then(() =>{
+      history.push('/');
+    })
+  }
 
   return (
     <div className="blog-details">
@@ -42,8 +52,24 @@ const BlogDetails = () => {
           >
             {blog.title}
           </h3>
-          <div style={{marginBottom:"15px"}}>{blog.body}</div>
-          <h4 style={{ display: "flex", justifyContent: "flex-end", }}>
+          <div style={{ marginBottom: "15px" }}>{blog.body}</div>
+          <h4 style={{ display: "flex", justifyContent: "space-between" }}>
+            <button
+              onClick={handleDelete}
+              className="del"
+              style={{
+                borderRadius: "50%",
+                border:"none",
+                outline:"none",
+                display:"flex",
+                justifyContent:"center",
+                alignItems:"center",
+                padding:"4px 4px",
+                cursor:"pointer",
+              }}
+            >
+              <img src={trash} style={{filter: "invert(100%) sepia(0%) saturate(1%) hue-rotate(231deg) brightness(103%) contrast(101%)", transform:"scale(0.75)"}} alt=""></img>
+            </button>
             <i>
               <strong
                 style={{

@@ -1,5 +1,4 @@
 import { useState } from "react"
-import  loadinganim from "../Assets/Eclipse-1s-200px.gif"
 import { useHistory } from "react-router-dom"
 
 const Create = () => {
@@ -22,7 +21,7 @@ const Create = () => {
       }).then(() => {
          console.log("New Blog Added");
          setIsPending(false);
-         history.go(-1);
+         history.push('/');
       }) 
    }
 
@@ -46,7 +45,7 @@ const Create = () => {
                <option value="Sarvagya">Sarvagya</option>
             </select>
             {!isPending && <button className="ripple">Add blog</button>}
-            {isPending && <button disabled><img src={loadinganim} alt=""/></button>}
+            {isPending && <button disabled style={{backgroundColor:"grey"}}>⏳</button>}
          </form>
          {/* Ouput
             <p>{ title}</p>

@@ -33,6 +33,7 @@
   color: #f1356d;
 }
 
+
 .content {
   max-width: 600px;
   margin: 40px auto;
@@ -115,6 +116,18 @@
   background-color: #ff487f;
   background-size: 100%;
   transition: background 0s;
+}
+
+.del {
+  background-color: #a5a8ac;
+}
+
+.del:hover {
+  background-color: #f1356d;
+}
+
+.del:active {
+  transform: scale(0.85);
 }
 
 
