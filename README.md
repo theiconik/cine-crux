@@ -1,3 +1,7 @@
+# Cine Crux
+Simple movie-shows review blog created using React. Includes functionalities like posting, deleting and reading blog. Talking about the looks, here's how it looks 👇 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
