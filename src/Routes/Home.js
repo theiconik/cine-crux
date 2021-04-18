@@ -5,7 +5,7 @@ import useFetch from '../Hooks/useFetch'
 
 const Home = () => {
 
-   const {data: blogs, isPending, error} = useFetch("http://localhost:8000/blogs");
+   const {data: blogs, isPending, error} = useFetch("https://my-json-server.typicode.com/theiconik/cine-crux/blogs");
 
    // const handleDelete = (id) => {
    //    const newBlogs = blogs.filter(blog => blog.id !== id)
